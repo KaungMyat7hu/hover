@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>
+		Button Hover Effect
+
+	</title>
+
+
+<style type="text/css">
+	
+
+.button { width: 350px;
+          height:150px;
+          position:absolute;
+          top:50%;
+          left:50%;
+          transform:translate(-50%,-50%);
+          color:black;
+          background:transparent;
+          z-index: 3;
+          font-family:"Arial";
+          font-size:7em;
+          text-align:center;
+          line-height:150px; }
+.five:before { content:"button";
+                width:100%;
+                height:100%;
+                position:absolute;
+                bottom:0;
+                left:0;
+                color: white;
+                z-index:5;
+                background: transparent;
+                 }
+.one { width:100%;
+       height:100%;
+       background:transparent;
+       background: rgba(00,75,255,1);
+       position:absolute;
+       bottom:0;
+       left: 0;
+       
+       }
+
+.two { width:100%;
+      height:5px;
+      position: absolute;
+      background:rgba(00,75,255,1);
+      top: 0;
+      left: 0;
+      transform: scaleX(0); 
+        }
+
+.three { width:5px;
+          height:0;
+          position:absolute;
+          background:rgba(00,75,255,1);
+          top:0;
+          left:0; }
+
+.four { width:5px;
+        height:0;
+        position:absolute;
+        top:0;
+        right:0;
+        background:rgba(00,75,255,1); }
+
+.five { width:100%;
+       height:100%;
+       background:transparent;
+       position:absolute;
+       top:0;
+       left:0; }
+
+.six,.seven { width:0%;
+                height:5px;
+                 background:blue;
+                 position:absolute;
+                 transition:.3s linear; }
+
+.six { left:0;bottom:0; }
+
+.seven { right:0;bottom:0; }
+
+.button:hover .two { transform:scaleX(1);   transition: .25s linear; transition-delay:.5s; }
+.button:hover .one { height:0; transition: .5s linear; }
+.button:hover .three { height:100%;  transition: .5s linear; transition-delay:.75s; }
+.button:hover .four { height:100%; transition: .5s linear; transition-delay:.75s; }
+.button:hover .five:before { color:rgba(00,75,255,1); transition: .5s ease-out; }
+
+.button:hover .six { width:100%;
+                 transition-delay:1.25s; }
+.button:hover .seven {width:100%;
+                 transition-delay:1.25s;}
+
+</style>
+
+
+
+
+</head>
+<body>
+
+
+<div class = "button">
+
+<span class = "one"> </span>
+<span class = "two"> </span>
+<span class = "three"> </span>
+<span class = "four"> </span>
+<span class = "five"> </span> 
+<span class = "six">  </span>
+<span class = "seven"></span>
+
+
+
+</div>
+
+
+
+
+</body>
+</html>

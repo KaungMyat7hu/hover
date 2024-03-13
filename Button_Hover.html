@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Button Hover</title>
+
+<style type="text/css">
+	
+
+body{ margin:0;
+     padding:0;
+     background:rgba(25,25,25,1); }
+
+
+
+a { color:rgba(255,255,255,.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family:"Arial";
+    display:inline-block;
+    background:rgba(0,0,0,.15);
+
+    width:250px;
+    height:150px;
+    font-size:50px;
+    text-decoration:none;
+    text-align:center;
+    line-height:150px; }
+
+span:nth-child(1){ width:0%;
+      height:2.5px;
+      position:absolute;
+      top: 0;
+      right: 0;
+      
+      background:rgba(00,125,255,1); }
+
+a:hover { font-size:55px; transition:.2s linear;transition-delay:.15s;
+ }
+
+a:hover span:nth-child(1) { width: 100%; transition: .15s linear; transition-delay:.3s }
+
+span:nth-child(2) { width:0;
+                    height:2.5px;
+                    position: absolute;
+                    bottom:0;
+                    left:0;
+                    background: rgba(00,125,255,1);
+                     }
+
+a:hover span:nth-child(2) { width:100%; transition:.15s linear; 
+                           transition-delay:0s; }
+ 
+span:nth-child(3) { width:2.5px;
+                   height:00%;
+                   position:absolute;
+                   right:0;
+                   bottom:0;
+                   background:rgba(00,125,255,1); }
+
+a:hover span:nth-child(3) {height: 100%; transition: .15s linear; transition-delay:.15s;}
+
+span:nth-child(4) { width:2.5px;
+                   height:00%;
+                   position:absolute;
+                   top:0;
+                   left:0;
+                   background:rgba(00,125,255,1); }
+
+a:hover span:nth-child(4) { height:100%; transition:.15s linear; transition-delay:.45s; }
+
+a:hover { color:white; }
+
+
+
+</style>
+
+</head>
+<body>
+
+<a href = "#"> 
+
+Button
+
+<span> </span>
+<span> </span>
+<span> </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span> </span>
+
+</a>
+
+
+
+</body>
+</html>
